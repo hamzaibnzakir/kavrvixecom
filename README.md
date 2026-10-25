@@ -1,26 +1,23 @@
-# Kavrvix Ecom
+# Kavrvix Experts (branch: experts)
 
-Landing page for the Kavrvix ecommerce mentorship. One static page — no build step.
+Done-for-you ecommerce services marketplace. One static page, no build step.
+The mentorship landing page lives on the `main` branch.
+
+**Edit services:** everything is in the `SERVICES` list in the `<script>` of `index.html` (name, category, delivery time, revisions, what you get, what we need, best for, sample images).
+**Sample images:** `samples/`. Static and native samples are set in the `STATIC` and `NATIVE` lists.
+**Requests** post to the same Formspree endpoint with `request_type`, `services` and `budget` fields.
 
 ## Files
 
 | Path | What it is |
 | --- | --- |
 | `index.html` | The whole site (HTML, CSS, JS). Uses anime.js from cdnjs and Archivo / JetBrains Mono from Google Fonts. |
-| `proof/` | Student sales screenshots + the student video shown in the "Student sales" wall. |
+| `samples/` | Ad creative samples used in the hero, service cards, drawers and the work reel. |
 | `brand/` | Logo files: mark (SVG/PNG), full lockups for dark and light backgrounds, favicon. |
 
 ## Things to update
 
 **Social links** — in `index.html`, search for `SOCIALS:`. Replace each `href="#"` with the real profile URL and delete the `<span class="soon">Soon</span>` next to it.
-
-**Sales proof** — drop new screenshots into `proof/`, then add a line to the `PROOF` list near the top of the `<script>` in `index.html`:
-
-```js
-{ src: "proof/sale-17.jpg", caption: "$2,400 first week" },
-```
-
-Videos use `{ video: "proof/file.mp4", poster: "proof/poster.jpg", caption: "..." }`.
 
 **Application form** — submissions go to Formspree (`https://formspree.io/f/xrppeblq`). Change `FORM_ENDPOINT` in the script to switch it. The first real submission may ask you to confirm the form in your Formspree inbox.
 
