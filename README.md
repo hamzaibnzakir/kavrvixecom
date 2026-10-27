@@ -17,13 +17,18 @@ The mentorship landing page lives on the `main` branch.
 
 ## Things to update
 
-**Social links** — in `index.html`, search for `SOCIALS:`. Replace each `href="#"` with the real profile URL and delete the `<span class="soon">Soon</span>` next to it.
+**Social links**: WhatsApp +1 (302) 563-7966, Instagram @Kavrix00_, TikTok @kavrix03, Facebook Kavrix00, Telegram @kavrix. Used in the footer, the floating WhatsApp button, the custom quote band and the form messages. Search `index.html` for a handle to change it.
 
 **Application form** — submissions go to Formspree (`https://formspree.io/f/xrppeblq`). Change `FORM_ENDPOINT` in the script to switch it. The first real submission may ask you to confirm the form in your Formspree inbox.
 
-## Deploy
+## Deploy (production)
 
-Import the repo into Vercel (Framework: *Other*, no build command, output = root) or enable GitHub Pages on the `main` branch. Any static host works.
+1. Vercel → Add New Project → import `hamzaibnzakir/kavrvixecom`, set the production branch to `experts`. Framework preset **Other**, no build command, output directory = root. (The mentorship site is a second Vercel project on `main`.)
+2. Add the domain or subdomain (e.g. `experts.yourdomain.com`) in Vercel → Settings → Domains.
+3. Once live, change `og-image.png` in the `og:image` and `twitter:image` tags to the full URL so link previews show on Facebook, WhatsApp and X.
+4. Send one test request and confirm the form in the Formspree email (first submission only).
+
+Included: `vercel.json`, `404.html`, `robots.txt`, `site.webmanifest`, favicons and `og-image.png` (1200×630).
 
 ## Brand
 
