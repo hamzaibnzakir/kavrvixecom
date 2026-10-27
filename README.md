@@ -12,7 +12,7 @@ Landing page for the Kavrvix ecommerce mentorship. One static page — no build 
 
 ## Things to update
 
-**Social links** — in `index.html`, search for `SOCIALS:`. Replace each `href="#"` with the real profile URL and delete the `<span class="soon">Soon</span>` next to it.
+**Social links**: WhatsApp +1 (302) 563-7966, Instagram @Kavrix00_, TikTok @kavrix03, Facebook Kavrix00, Telegram @kavrix. They appear in the footer, the floating WhatsApp button, the "Ask a question first" button and the form success/error messages. To change one, search `index.html` for the old handle.
 
 **Sales proof** — drop new screenshots into `proof/`, then add a line to the `PROOF` list near the top of the `<script>` in `index.html`:
 
@@ -24,9 +24,14 @@ Videos use `{ video: "proof/file.mp4", poster: "proof/poster.jpg", caption: "...
 
 **Application form** — submissions go to Formspree (`https://formspree.io/f/xrppeblq`). Change `FORM_ENDPOINT` in the script to switch it. The first real submission may ask you to confirm the form in your Formspree inbox.
 
-## Deploy
+## Deploy (production)
 
-Import the repo into Vercel (Framework: *Other*, no build command, output = root) or enable GitHub Pages on the `main` branch. Any static host works.
+1. Vercel → Add New Project → import `hamzaibnzakir/kavrvixecom`, branch `main`. Framework preset **Other**, no build command, output directory = root.
+2. Add your domain in Vercel → Settings → Domains.
+3. After the domain is live, change `og-image.png` in the `og:image` and `twitter:image` tags to the full URL (e.g. `https://kavrvix.com/og-image.png`) so Facebook, WhatsApp and X show the preview card.
+4. Submit one test application and confirm the form in the Formspree email (first submission only).
+
+Included: `vercel.json` (clean URLs, caching, security headers), `404.html`, `robots.txt`, `site.webmanifest`, favicons and `og-image.png` (1200×630).
 
 ## Brand
 
